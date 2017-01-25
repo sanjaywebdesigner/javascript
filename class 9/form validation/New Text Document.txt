@@ -1,0 +1,3 @@
+Var a=69-aa.length;
+var a=aa.length;
+getelementbyId("p").value=a;

@@ -1,0 +1,36 @@
+<html>
+<title>airthmetic Op</title>
+<head>
+
+<style>
+#aa{
+width:500px;
+height:100px;
+}
+</style>
+<script type="text/javascript">
+
+
+
+function prnt(){
+	var a=document.myform.nm1.value;
+	var b=document.myform.nm2.value;
+	
+	var c=Number(a)+Number(b);
+	document.getElementById('aa').innerHTML="your answer is = "+c;
+}
+
+
+
+</script>
+
+</head>
+<body>
+<form name="myform">
+<input type="text" name="nm1">
+<input type="text" name="nm2">
+<input type="button" onClick="prnt()" value="sum">
+<div id="aa"></div>
+</form>
+</body>
+</html>

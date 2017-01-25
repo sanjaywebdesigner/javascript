@@ -1,0 +1,84 @@
+<html>   
+  
+<head>   
+  
+<title>Simple Javascript Calculator - Basic Arithmetic Operations</title>    
+<script language="javascript" type="text/javascript">   
+function multiply(){   
+a=Number(document.calculator.number1.value);   
+b=Number(document.calculator.number2.value);   
+}   
+</script>   
+<script language="javascript" type="text/javascript">   
+function addition(){   
+a=Number(document.calculator.number1.value);   
+b=Number(document.calculator.number2.value);   
+c=a+b;   
+document.calculator.total.value=c;   
+}   
+</script>   
+  
+<script language="javascript" type="text/javascript">   
+function subtraction(){   
+a=Number(document.calculator.number1.value);   
+b=Number(document.calculator.number2.value);   
+c=a-b;   
+document.calculator.total.value=c;   
+}   
+</script>   
+ <script language="javascript" type="text/javascript">   
+function multiply(){   
+a=Number(document.calculator.number1.value);   
+b=Number(document.calculator.number2.value);   
+c=a*b;   
+document.calculator.total.value=c;   
+}   
+</script>  
+<script language="javascript" type="text/javascript">   
+function division(){   
+a=Number(document.calculator.number1.value);   
+b=Number(document.calculator.number2.value);   
+c=a/b;   
+document.calculator.total.value=c;   
+}   
+</script>   
+ 
+<script language="javascript" type="text/javascript">   
+function modulus(){   
+a=Number(document.calculator.number1.value);   
+b=Number(document.calculator.number2.value);   
+c=a%b;   
+document.calculator.total.value=c;   
+}   
+</script>   
+  
+</head>   
+  
+<body>   
+  
+<!-- Opening a HTML Form. -->    
+<form name="calculator">   
+  
+<!-- Here user will enter 1st number. -->    
+Number 1: <input type="text" name="number1">   
+    
+  
+<!-- Here user will enter 2nd number. -->    
+Number 2: <input type="text" name="number2">   
+  
+  
+<!-- Here result will be displayed. -->    
+Get Result: <input type="text" name="total">   
+  
+  
+<!-- Here respective button when clicked, calls only respective artimetic function. -->    
+<input type="button" value="ADD" onclick="addition();">   
+<input type="button" value="SUB" onclick="subtraction();">   
+<input type="button" value="MUL" onclick="multiply();">   
+<input type="button" value="DIV" onclick="division();">   
+<input type="button" value="MOD" onclick="modulus();">   
+  
+</form>   
+  
+</body>   
+</html>  

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+function validation(){
+var a=	document.form1.name.value;
+if(a=="")
+{
+	document.form1.name.value="no input";
+	}
+var b=	document.form1.passward.value;
+
+}
+	
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <p>
+    <label for="textfield" id="out">name</label>
+    <input type="text" name="name" id="textfield" onblur="return validation()" />
+    <!--<div id="out" style="color:#F00"></div> -->
+  </p>
+  <p>passward
+    <input type="text" name="passward" id="textfield2" onblur="return validation()" />
+  </p>
+  <p>confirm passward
+    <input type="text" name="cpassward" id="textfield3" onblur="return validation()" />
+  </p>
+  <p>emailid
+    <input type="text" name="email" id="textfield4" />
+  </p>
+  <p>
+    <input type="checkbox" name="checkbox" id="checkbox" />
+  hobbies1
+  <input type="checkbox" name="checkbox2" id="checkbox2" />
+  hobbies2</p>
+  <p>
+    <input type="radio" name="radio" id="radio" value="radio" />
+  male
+  <input type="radio" name="radio" id="radio2" value="radio2" />
+  female</p>
+  <p>
+    <input type="submit" name="button" id="button" value="Submit" />
+  </p>
+</form>
+</body>
+</html>

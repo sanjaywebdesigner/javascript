@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Untitled Document</title>
+<script language="javascript">
+
+	
+	function formvaliname(){
+		var nm=document.form1.username.value;
+	if
+		(nm==""){alert("please enter a value")}
+	else if	
+	(!(isNaN(nm))){alert("please enter first letter alphabetical")}
+else if
+		(nm.length<5){alert("please enter minimum 5 letters")}	
+	else if
+		(nm.indexOf(" ")==-1){alert("please enter sur name")}	
+}
+
+
+
+
+
+function formvalipassward(){
+	var pass=document.form1.passward.value;
+	if
+		(pass==""){alert("please enter a value")}
+else if
+		(pass.length<8){alert("please enter minimum 8 letters")}
+	
+}
+
+
+
+
+function formvaliconfirm(){
+	var pass=document.form1.passward.value;
+	var passconfirm=document.form1.passwardconfirm.value;
+	if
+		(!(pass==passconfirm)){alert("please enter a correct passward")}
+	
+}
+
+
+
+
+function formvaliemail(){
+	var email=document.form1.emailid.value;
+	var c=email.indexOf("@");
+	var d=email.indexOf(".");
+	var e=email.lastIndexOf(".");
+	var f=email.length;
+	var g=e+4;
+if
+		(email==""){alert("please enter a value")}
+		else if(c==-1)
+		{alert("please enter a value with @")
+			}
+	else if(d==-1)
+		{alert("please enter a value with .")
+			}
+else if(e<c)
+		{alert("please enter@ before dot(.)")
+			}
+else if(g>f)
+		{alert("please enter3 values after last dot(.)")
+			}
+}
+
+
+
+
+function formvaliage(){
+	var ag=document.form1.age.value;
+	if
+		(ag==""){alert("please enter a value")}
+	else if(ag>110)
+	{alert("please enter a value less than 110")
+		}
+	
+}
+
+
+
+
+function formvaligender(){
+	var male=document.form1.mandf.value;
+if
+		(male==""){alert("please enter a value")}
+	
+}
+
+
+
+
+function formvalimobile(){
+	var mob=document.form1.mobile.value;
+if
+		(mob==""){alert("please enter a value")}
+	else if
+		(isNaN(mob)){alert("please enter a numerical value")}
+		
+	else if(!(mob.length==10)){alert("please enter a value of 10 digit for India")
+	}
+	else if(mob.charAt(0)<=6)
+	{alert("please enter a start with 7,8 or 9")
+		}
+}
+</script>
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="600" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="300">User name</td>
+      <td width="300"><label for="username"></label>
+      <input type="text" name="username" id="username" onblur="return formvaliname()"/></td>
+    </tr>
+    <tr>
+      <td>Passward</td>
+      <td><input type="password" name="passward" id="passward" onblur="return formvalipassward()"/></td>
+    </tr>
+    <tr>
+      <td>confirm passward</td>
+      <td><input type="password" name="passwardconfirm" id="passwardconfirm" onblur="return formvaliconfirm()"/></td>
+    </tr>
+    <tr>
+      <td>Emailid</td>
+      <td><input type="text" name="emailid" id="emailid" onblur="return formvaliemail()"/></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td><input type="text" name="age" id="age" onblur="return formvaliage()"/></td>
+    </tr>
+    <tr>
+      <td>Male/Female</td>
+      <td><input type="text" name="mandf" id="mandf" onblur="return formvaligender()"/></td>
+    </tr>
+    <tr>
+      <td>Mobile No</td>
+      <td><input type="text" name="mobile" id="mobile" onblur="return formvalimobile()"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" value="Submit" /></td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

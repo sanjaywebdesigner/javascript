@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Untitled Document</title>
+<script language="javascript">
+
+	
+	function formvali(){
+		var nm=document.form1.username.value;
+	
+	
+	
+	
+	if
+		(nm==""){alert("please enter a value")}
+	else if	
+	(!(isNaN(nm.charAt(0)))){alert("please enter first letter alphabetical")}
+else if
+		(nm.length<5){alert("please enter minimum 5 letters")}	
+}
+function formvali1(){
+	var pass=document.form1.passward.value;
+	if
+		(pass==""){alert("please enter a value")}
+	
+}
+function formvali2(){
+	var email=document.form1.emailid.value;
+if
+		(email==""){alert("please enter a value")}
+	
+}
+function formvali3(){
+	var ag=document.form1.age.value;
+	if
+		(ag==""){alert("please enter a value")}
+	
+}
+function formvali4(){
+	var male=document.form1.mandf.value;
+if
+		(male==""){alert("please enter a value")}
+	
+}
+</script>
+</head>>
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="600" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="300">User name</td>
+      <td width="300"><label for="username"></label>
+      <input type="text" name="username" id="username" onblur="return formvali()"/></td>
+    </tr>
+    <tr>
+      <td>Passward</td>
+      <td><input type="password" name="passward" id="passward" onblur="return formvali1()"/></td>
+    </tr>
+    <tr>
+      <td>confirm passward</td>
+      <td><input type="password" name="passwardconfirm" id="passwardconfirm" /></td>
+    </tr>
+    <tr>
+      <td>Emailid</td>
+      <td><input type="text" name="emailid" id="emailid" onblur="return formvali2()"/></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td><input type="text" name="age" id="age" onblur="return formvali3()"/></td>
+    </tr>
+    <tr>
+      <td>Male/Female</td>
+      <td><input type="text" name="mandf" id="mandf" onblur="return formvali4()"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" value="Submit" /></td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

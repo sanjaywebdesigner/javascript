@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Untitled Document</title>
+<script language="javascript">
+
+	
+	function sanjay(){
+a1=document.form1.text1.value;
+a=Number(document.form1.text1.value);
+b=Number(document.form1.text2.value);
+for(i=0;i<a1.length;i++)
+{g=a1.charCodeAt(i);
+
+if((g<48) || (g>57)){
+document.form1.text1.value="please enter numeric value";}
+}
+if(a==""){
+c="please enter value";
+document.form1.text1.value=c;
+}
+else if(b==""){
+d="please enter value";
+document.form1.text2.value=d;
+}
+else{
+c=a+b;
+document.form1.text3.value=c;
+}		
+}
+function sanjay1(){
+a=Number(document.form1.text1.value);
+b=Number(document.form1.text2.value);
+c=a-b;
+document.form1.text3.value=c;		
+}
+function sanjay2(){
+a=Number(document.form1.text1.value);
+b=Number(document.form1.text2.value);
+c=a*b;
+document.form1.text3.value=c;		
+}
+function sanjay3(){
+a=Number(document.form1.text1.value);
+b=Number(document.form1.text2.value);
+c=a/b;
+document.form1.text3.value=c;		
+}
+function sanjay4(){
+document.form1.text1.value=""
+document.form1.text2.value=""
+document.form1.text3.value=""		
+}
+</script>
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <input type="text" name="text1"><br>
+<input type="text" name="text2"><br>
+<input type="text" name="text3"><br>
+      <input type="button" name="button" id="button" value="+"  onClick="sanjay()"/><input type="button" name="button1" id="button1" value="-"  onClick="sanjay1()"/><input type="button" name="button2" id="button2" value="*"  onClick="sanjay2()"/><input type="button" name="button3" id="button3" value="/"  onClick="sanjay3()"/>
+<input type="button" name="button4" id="button4" value="clear"  onClick="sanjay4()"/>    
+</form>
+</body>
+</html>
