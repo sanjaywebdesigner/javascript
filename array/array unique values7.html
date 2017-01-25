@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+var a=new Array(2,4,2,6,4,3,2,7,8,9,1,7,7,7,7,7,7);
+var b=new Array();
+for(i=0;i<a.length;i++)
+{
+	if(a[i]!=0)
+	{
+		f=0;
+		count=1;
+		for(j=i+1;j<a.length;j++)
+		{
+			
+				if (a[i]==a[j])
+				{a[j]=0;
+				count++;
+				f++;
+				if(f==1)
+				{
+				b.push(a[i]);}
+				}
+				
+			
+		}
+		if(f==0)
+		{b.push(a[i]);
+		}
+		else{
+			document.write("<br>count is "+a[i]+" is : "+count);
+		}
+	}
+}
+b.sort();
+b.reverse();
+for(k=0;k<b.length;k++)
+{
+	document.write("<br>"+b[k]+" is unique ");
+}
+</script>
+</body>
+</html>
