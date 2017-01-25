@@ -1,0 +1,22 @@
+
+<html>
+<head>
+
+</head>
+
+<body>
+<script>
+var day=["sun","mon","tue"]
+var cdate= new Date();
+var chour=cdate.getHours();
+var cmin=cdate.getMinutes();
+var csec=cdate.getSeconds();
+if(csec<10){
+	csec="0"+csec
+}
+
+document.write(chour+":"+cmin+":"+csec);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+
+image01= new Image()
+image01.src="gall/roll.jpg";
+image02= new Image()
+image02.src="gall/image1.jpg";
+
+
+
+function rollover(imagename, newsrc){
+document.images[imagename].src=newsrc.src
+}
+
+
+</script>
+</head>
+
+<body>
+<a href="#" onMouseOver="rollover('example', image02)"
+onmouseout="rollover('example', image01)">
+<img src="gall/roll.jpg" name="example">
+</a>
+</body>
+</html>
+
+
+
+
+

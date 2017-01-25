@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+
+function sanjay(){
+firstValue=Number(document.sum.first.value);
+secondValue=Number(document.sum.second.value);
+c=firstValue+secondValue;
+document.sum.total.value=c;
+}
+function sanjaya(){
+firstValue=Number(document.sum.first.value);
+secondValue=Number(document.sum.second.value);
+c=firstValue-secondValue;
+document.sum.total.value=c;
+}
+function sanjayb(){
+firstValue=Number(document.sum.first.value);
+secondValue=Number(document.sum.second.value);
+c=firstValue*secondValue;
+document.sum.total.value=c;
+}
+function sanjayc(){
+firstValue=Number(document.sum.first.value);
+secondValue=Number(document.sum.second.value);
+c=firstValue/secondValue;
+document.sum.total.value=c;
+}
+function sanjayd(){
+document.sum.first.value="";
+document.sum.second.value="";
+document.sum.total.value="";
+}
+</script>
+</head>
+<body>
+<form name="sum">
+<input type="text" name="first"><br>
+<input type="text" name="second"><br>
+<input type="text" name="total"><br>
+<input type="button" name="sanjay1" onClick="sanjay()" value="+">
+<input type="button" name="sanjay2" onClick="sanjaya()" value="-">
+<input type="button" name="sanjay3" onClick="sanjayb()" value="*">
+<input type="button" name="sanjay4" onClick="sanjayc()" value="/">
+<input type="button" name="sanjay5" onClick="sanjayd()" value="clear">
+</form>
+
+</body>
+</html>

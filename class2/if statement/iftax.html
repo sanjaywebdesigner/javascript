@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type= "text/javascript">
+var salary=600000;
+var taxable=salary-200000;
+var tax1=taxable*.1;
+var tax2=taxable*.2-30000;
+var tax3=taxable*.3-110000;
+if(salary<=200000)
+{document.write("your taxable amount is nil");
+	}
+	else if (salary>200000 && salary<=500000)
+	{document.write("your taxable amount is "+tax1);
+	}
+	else if (salary>500000 && salary<=1000000)
+	{document.write("your taxable amount is "+tax2);
+	}
+	else
+	{document.write("your taxable amount is "+tax3);
+	}
+</script>
+</head>
+</html>

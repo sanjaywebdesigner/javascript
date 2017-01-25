@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+.ss{
+width:300px;
+}
+</style>
+<script>
+
+function sanjay(){
+firstValue=Number(document.sum.first.value);
+if(firstValue=="")
+{
+document.sum.first.value="please enter a value";
+}
+else if(firstValue<0)
+{
+document.sum.first.value="please enter a positive value";
+}
+else if(firstValue>1000)
+{
+document.sum.first.value="please enter value less than 1000";
+}
+}
+
+</script>
+</head>
+<body>
+<form name="sum">
+<input type="text" name="first" value="" class="ss"><br>
+<input type="button" name="sanjay5" onClick="sanjay()" value="clear">
+<p></p>
+
+
+</form>
+
+</body>
+</html>

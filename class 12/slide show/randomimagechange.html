@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var image1=new Image()
+image1.src="Jellyfish.jpg"
+var image2=new Image()
+image2.src="Koala.jpg"
+var image3=new Image()
+image3.src="Lighthouse.jpg"
+//-->
+</script>
+</head>
+<body>
+<img src="file:///F|/java script/5-3-13/0303/Jellyfish.jpg" name="slide" width="600" height="400" />
+<script>
+
+
+function slideit(){
+	var a=Math.random()*4;
+	var step = Math.floor(a);
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+
+setTimeout("slideit()",500)
+}
+slideit()
+</script>
+</body>
+</html>

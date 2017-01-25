@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+    function sum()
+    {
+        var num1 = Number(document.Calc.number1.value);
+        var num2 = Number(document.Calc.number2.value);
+        var sum =num1+num2;
+        document.Calc.result.value=sum;
+
+    }
+</script>
+<!--sanjay-->
+<form name="Calc">
+    <input type="text" name="number1"> +
+    <input type="text" name="number2">
+    <input type="button"  name="button" onClick="sum()">
+    <input type="text" id="add" size="7" name="result" value="">
+</form>
+</body>
+</html>

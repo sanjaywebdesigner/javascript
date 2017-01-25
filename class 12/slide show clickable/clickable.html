@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var image1=new Image()
+image1.src="Jellyfish.jpg"
+var image2=new Image()
+image2.src="Koala.jpg"
+var image3=new Image()
+image3.src="Lighthouse.jpg"
+//-->
+</script>
+</head>
+<body>
+<img src="Jellyfish.jpg" name="slide" width="600" height="400" />
+<script>
+
+var a=2;
+
+
+function nxt(){
+if(a<=3){
+document.images.slide.src=eval("image"+a+".src")
+a++;
+}
+
+}
+
+
+function prev(){
+if(a>1){
+document.images.slide.src=eval("image"+a+".src")
+a--;
+}
+
+}
+
+</script>
+<form action="" method="get">
+
+<input type="button" value="nxt" onClick="nxt()">
+<input type="button" value="prev" onClick="prev()">
+
+</form>
+
+</body>
+</html>
