@@ -1,0 +1,106 @@
+<html>
+      <head>
+        <title>Age Checker</title>
+
+        <script>
+
+		
+		   function age()
+		  {
+		    var d=new Date();
+
+			var date=d.getDate();
+			var month=d.getMonth()+1;
+			var year=d.getFullYear();
+			
+			var bdate=Number(document.calcform.num1.value);
+			var bmonth=Number(document.calcform.num2.value);
+			var byear=Number(document.calcform.num3.value);
+			//document.write(23+":"+12+":"+45);
+			if(bdate=="" || bmonth=="" || byear=="")
+			{
+				alert("please enter values");
+			}
+			else{
+			if(bdate<=date)
+			{
+				var tdate=date-bdate;
+				document.calcform.result.value=tdate;
+				 
+				<!--document.getElementById('todaydate').innerHTML=tdate;-->
+			}
+			else
+			{
+				var d=30+date;
+				var tdate=d-bdate;
+				document.calcform.result.value=tdate;
+				<!--document.getElementById('todaydate').innerHTML=tdate;-->
+			}
+			
+			if(bmonth<=month)
+			{
+			var tmonth=month-bmonth;
+			document.calcform.result1.value=tmonth;
+			<!--document.getElementById('todaymonth').innerHTML=tmonth;-->
+			}
+			else
+			{
+			var tmonth=month-1;
+			document.calcform.result1.value=tmonth;
+			<!--document.getElementById('todaymonth').innerHTML=tmonth;-->
+			}	
+			
+			if(bmonth<month)
+			{
+			var tyear=year-byear;
+			document.calcform.result2.value=tyear;
+			<!--document.getElementById('todayage').innerHTML=tyear;-->
+			}
+			else
+			{
+			var tyear=(year-byear)-1;
+			document.calcform.result2.value=tyear;
+			<!--document.getElementById('todayage').innerHTML=tyear;-->
+			}
+			}
+		  }
+        </script>
+      </head>
+
+      <body>
+        <form name="calcform">
+			<table>
+				<tr>
+					<td>Date</td>
+					<td> <input type="text" name="num1" value=""></td>
+				</tr>
+				
+				<tr> 
+					<td>Month</td>
+					<td><input type="text" name="num2" value=""></td>
+				</tr>
+				
+				<tr> 
+					<td>Year</td>
+					<td><input type="text" name="num3" value=""></td>
+				</tr>
+				<tr> 
+					<td><input type="button" name="button" Value="Age" onClick="age()" ></td>
+					<td>
+					
+						<input type="text" ID="todaydate " name="result" value="" Size="3"> Days
+					
+						<input type="text" ID="todaymonth" name="result1" value="" Size="2"> Months
+					
+						<input type="text" ID="todayage" name="result2" value="" Size="4"> Years Old
+					</td>
+				</tr>
+				
+					
+           </table>
+        </form>
+		<!--<div id="todaydate"> </div>
+		<div id="todaymonth"> </div>
+		<div id="todayage"> </div>-->
+      </body>
+</html>

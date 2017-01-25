@@ -1,0 +1,16 @@
+#sortDiv{
+    display: none;
+}
+.green{
+    color:green;
+}
+.red{
+    color:red;
+    text-decoration: line-through;
+}
+li{
+    cursor: pointer;
+}
+#searchDiv{
+    display: none;
+}

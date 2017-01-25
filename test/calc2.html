@@ -1,0 +1,73 @@
+<html>
+      <head>
+        <title>Calculator 2</title>
+
+        <script>
+          function add()
+          {
+             var val1 = Number(document.calcform.num1.value);
+             var val2 = Number(document.calcform.num2.value);
+             var plus =val1+val2;
+             document.calcform.addition.value=plus;
+          }
+		  function sub()
+		  {
+			 var val1 = Number(document.calcform.num3.value);
+             var val2 = Number(document.calcform.num4.value);
+			var minus=val1-val2;
+			document.calcform.subtraction.value=minus;
+		  }
+		  function mul()
+		  {
+			var val1=Number(document.calcform.num5.value);
+			var val2=Number(document.calcform.num6.value);
+			var multi=val1*val2;
+			document.calcform.multiplication.value=multi;
+		  }
+		  function divi()
+		  {
+			var val1=Number(document.calcform.num7.value);
+			var val2=Number(document.calcform.num8.value);
+			var divis=val1/val2;
+			document.calcform.division.value=divis;
+		  }
+		
+        </script>
+      </head>
+
+      <body>
+        <form name="calcform">
+			<table>
+				<tr>
+					<td> 
+						<input type="text" name="num1" value=""> + <input type="text" name="num2" value="">
+						<input type="button" name="button" Value="=" onClick="add()">
+						<input type="text" ID="addition" name="result" value="">
+					</td>
+				</tr>
+				<tr>
+					<td> 
+						<input type="text" name="num3" value=""> -  <input type="text" name="num4" value="">
+						<input type="button" name="button" Value="=" onClick="sub()">
+						<input type="text" ID="subtraction" name="result" value="">
+					</td>
+				</tr>
+				<tr>
+					<td> 
+						<input type="text" name="num5" value=""> x  <input type="text" name="num6" value="">
+						<input type="button" name="button" Value="=" onClick="mul()">
+						<input type="text" ID="multiplication" name="result" value="">
+					</td>
+				</tr>
+				<tr>
+					<td> 
+						<input type="text" name="num7" value=""> /  <input type="text" name="num8" value="">
+						<input type="button" name="button" Value="=" onClick="divi()">
+						<input type="text" ID="division" name="result" value="">
+					</td>
+				</tr>
+           </table>
+        </form>
+
+      </body>
+</html>
